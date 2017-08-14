@@ -1,0 +1,762 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+/* resets */
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {
+    display: block;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h1 span {
+    font-weight: 800;
+    font-size: 3.75em;
+    letter-spacing: -1.5px;
+    margin: 0;
+}
+
+h1 span {
+    display: block;
+    font-size: inherit;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.greenbox {
+    background-color: #399;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 800;
+    margin: 10px 34px 0 -15px;
+    padding: 6px 0px 6px 15px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.marked-place {
+    max-width: 100%;
+    height: 316px;
+    background-color: #666;
+    margin: 24px 8px 0 0;
+}
+
+body {
+    background-image: url("../img/top_bg.jpg");
+    background-position: center top;
+    /*   background-size: cover;*/
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.top-content {
+    min-height: 640px;
+    padding-top: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-weight: 800;
+    font-size: 1.25em;
+    margin: 23px 0 0 0;
+    padding: 0;
+    letter-spacing: -0.6px;
+    line-height: 1.25em;
+}
+
+.top-text span {
+    font-weight: 800;
+    color: #399;
+    font-size: 1.5em;
+    letter-spacing: -0.6px;
+    line-height: 27px;
+}
+
+.form-container {
+    float: right;
+    background-color: #000;
+    margin: -50px 0 0 9px;
+    padding: 61px 0 77px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo {
+    display: block;
+}
+
+.form-text {
+    margin: 20px 0 0 0;
+    font-size: 1.143em;
+    font-weight: 600;
+    letter-spacing: 0.75px;
+    line-height: 1.26em;
+}
+
+.form-text span {
+    display: block;
+    font-size: inherit;
+}
+
+.form-sub-text {
+    text-transform: none;
+    font-size: 0.875em;
+    margin: 10px 0;
+}
+
+.form-container form {
+    margin: 27px 30px 19px;
+}
+
+.form-container form input {
+    background: url(../img/icons.gif) #fff no-repeat 16px 16px;
+    border: none;
+    padding-left: 49px;
+    margin: 0 0 10px;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+}
+
+.form-container form input.email {
+    background-position: 16px -44px;
+}
+
+.form-container form input.location {
+    background-position: 16px -44px;
+}
+
+.form-container form .phone {
+    position: relative;
+}
+
+.form-container form .phone .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 50px;
+    color: #000;
+    line-height: 50px;
+    border-right: 1px solid #000;
+    padding-left: 26px;
+    font-size: 0.9em;
+    letter-spacing: -0.05em;
+}
+
+.form-container form .phone input {
+    background-position: 16px -164px;
+    padding-left: 135px;
+}
+
+/* -------------- Select Decoration ---------------- */
+.styled select {
+    background: transparent;
+    width: 110%;
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    background: url(../img/icons.gif) no-repeat 16px -104px;
+    padding: 0 0 0 45px;
+    text-transform: none;
+}
+
+.styled {
+    margin: 0 0 10px;
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    background: url(../img/down.png) #fff no-repeat right 21px;
+}
+
+.form-container input[type="submit"] {
+    background: #ccff33; /* Old browsers */
+    background: -moz-linear-gradient(top, #ccff33 0%, #99cc33 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ccff33 0%, #99cc33 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ccff33 0%, #99cc33 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccff33', endColorstr='#99cc33', GradientType=0); /* IE6-9 */
+    border-top: 1px solid #fff;
+    border-bottom: 4px solid #4d661a;
+    margin-top: 20px;
+    font-size: 1.43em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    padding: 0;
+    line-height: 56px;
+    height: 64px;
+}
+
+.submit-text {
+    text-transform: none;
+    padding: 0 40px 0 23px;
+    line-height: 22px;
+}
+
+#tradingForm .highlight {
+/ / border: 1 px solid #ff7c7c !important;
+    -webkit-box-shadow: inset 0px 0px 10px 5px rgba(255, 124, 124, 1);
+    -moz-box-shadow: inset 0px 0px 10px 5px rgba(255, 124, 124, 1);
+    -o-box-shadow: inset 0px 0px 10px 5px rgba(255, 124, 124, 1);
+    box-shadow: inset 0px 0px 10px 5px rgba(255, 124, 124, 1);
+}
+
+.errorMessage {
+    color: #ff7c7c;
+    font-weight: 600
+}
+
+.errorMessage p {
+    color: #99cc33;
+    font-weight: 600
+}
+
+/* ------------------- offers ------------------------ */
+.offers {
+    background: url("../img/offers_bg.jpg") #fff no-repeat center bottom;
+    padding: 40px 0 73px 0;
+}
+
+.offers h2 {
+    text-transform: uppercase;
+    font-size: 1.875em;
+    text-align: center;
+    letter-spacing: -0.07em;
+    word-spacing: 0.2em;
+    padding: 15px 0 56px 10px;
+    font-weight: 800;
+}
+
+.offer {
+    padding: 90px 0 0 0;
+    text-align: center;
+}
+
+.offer1 {
+    background: url("../img/offer1.gif") no-repeat 109px 0;
+
+}
+
+.offer1 h3 {
+    text-align: left;
+}
+
+.offer2 {
+    background: url("../img/offer2.gif") no-repeat 145px 0;
+}
+
+.offer3 {
+    background: url("../img/offer3.gif") no-repeat 180px -1px;
+}
+
+.offer3 {
+    padding-left: 80px !important;
+}
+
+.offer h3 {
+    padding: 19px 0 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #399;
+    letter-spacing: -0.04em;
+}
+
+.offer p {
+    padding: 10px 0 14px 5px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+}
+
+.offer1 p {
+    padding: 10px 58px 14px 8px !important;
+}
+
+.offer1 p strong {
+    font-weight: 600;
+}
+
+.offer2 p {
+    padding: 10px 5px 14px 7px !important;
+}
+
+/* --------------------start-now ----------------------*/
+.start-now {
+    background: url("../img/start_now_bg.jpg") #329898 center top;
+    min-height: 269px;
+    text-align: center;
+}
+
+.start-now h2 {
+    text-transform: uppercase;
+    font-size: 1.875em;
+    text-align: center;
+    letter-spacing: -0.027em;
+    word-spacing: 0em;
+    padding: 54px 0 25px 10px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.start-now-button {
+    max-width: 524px;
+    margin: 0 auto;
+}
+
+.start-now-button p {
+    background: #ccff33;
+    background: -moz-linear-gradient(top, #ccff33 0%, #99cc33 100%);
+    background: -webkit-linear-gradient(top, #ccff33 0%, #99cc33 100%);
+    background: linear-gradient(to bottom, #ccff33 0%, #99cc33 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccff33', endColorstr='#99cc33', GradientType=0);
+    border-top: 1px solid #fff;
+    border-bottom: 6px solid #4d661a;
+    font-size: 2.25em;
+    font-weight: 800;
+    max-width: 510px;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    padding: 0;
+    margin: 0 0 0 14px;
+    height: 106px;
+    line-height: 98px;
+}
+
+/* ---------------- footer ------------------ */
+.footer {
+    background: #000;
+    color: #666;
+    text-align: center;
+    font-size: 0.875em;
+    padding-top: 20px;
+}
+
+.footer-text {
+    padding: 20px 42px 20px 100px;
+}
+
+.footer p {
+    letter-spacing: 0.01em;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+/* -------------- grids ------------------ */
+
+.grid {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1080px;
+}
+
+.grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid-pad {
+    padding: 0 15px 0 0;
+}
+
+.grid-pad > [class*='col-']:first-child {
+    padding-left: 15px;
+}
+
+[class*='col-'] {
+    float: left;
+}
+
+[class*='col-'] {
+    padding-left: 15px;
+}
+
+[class*='col-']:first-child {
+    padding-left: 0;
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+.col-1-4 {
+    width: 25%;
+}
+
+.col-1-8 {
+    width: 12.5%;
+}
+
+.col-1-12 {
+    width: 8.33%;
+}
+
+.col-5-12 {
+    width: 41.66%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body:after {
+        content: "320 to 480px";
+        background-color: hsla(90, 60%, 40%, 0.7);
+    }
+
+    .top-content {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    h1, h1 span {
+        font-size: 1.25em;
+    }
+
+    h1 span {
+        display: inline;
+        font-size: inherit;
+    }
+
+    .top-text {
+        font-size: 0.838em;
+        margin: 10px 0 0
+    }
+
+    .top-text span {
+        font-size: 1.5em;
+        line-height: 22px
+    }
+
+    .marked-place {
+        height: 185px;
+        margin: 10px 0;
+    }
+
+    .greenbox {
+        margin: 8px 0 0;
+        font-size: 0.835em;
+    }
+
+    .logo img {
+        width: 140px !important;
+        height: 33px !important;
+    }
+
+    .form-container {
+        float: none;
+        margin: 0;
+        padding: 20px 0 20px;
+    }
+
+    .form-text {
+        margin: 10px 0 0 0;
+        font-size: 0.73em;
+        font-weight: 700;
+        line-height: 1.26em;
+    }
+
+    .form-text span {
+        display: inline;
+        font-weight: inherit;
+    }
+
+    .form-sub-text {
+        text-transform: none;
+        font-size: 0.92em;
+        margin: 10px 0 0;
+    }
+
+    .form-container form {
+        margin: 20px 10px 0;
+    }
+
+    .form-container input[type="submit"] {
+        font-size: 1em;
+        margin-top: 10px
+    }
+
+    .submit-text {
+        text-transform: none;
+        padding: 0;
+        line-height: 22px;
+    }
+
+    .offers {
+        padding: 20px 0 0
+    }
+
+    .offers h2 {
+        font-size: 1.375em;
+        padding: 15px 0 0 10px;
+    }
+
+    .offer {
+        margin: 25px 0
+    }
+
+    .offer1 {
+        background: url("../img/offer1.gif") no-repeat center 0;
+    }
+
+    .offer1 h3 {
+        text-align: center;
+    }
+
+    .offer2 {
+        background: url("../img/offer2.gif") no-repeat center 0;
+    }
+
+    .offer3 {
+        background: url("../img/offer3.gif") no-repeat center -1px;
+    }
+
+    .offer3 {
+        padding-left: 0 !important;
+    }
+
+    .offer1 p {
+        padding: 10px 0 14px 0 !important;
+    }
+
+    .start-now {
+        min-height: auto;
+        padding: 0 0 25px
+    }
+
+    .start-now h2 {
+        padding: 25px 0 25px;
+        font-size: 1.375em;
+    }
+
+    .start-now-button p {
+        height: 66px;
+        font-size: 1.5em;
+        line-height: 59px;
+    }
+
+    .footer-text {
+        padding: 10px 10px 40px;
+    }
+
+    .grid {
+        width: 100%;
+    }
+
+    .grid-pad {
+        padding: 0 10px 0 0;
+    }
+
+    .grid-pad > [class*='col-']:first-child {
+        padding-left: 10px;
+    }
+
+    [class*='col-'] {
+        padding-left: 10px;
+    }
+
+    .col-2-3 {
+        width: 100%;
+    }
+
+    .col-1-3 {
+        width: 100%;
+    }
+
+    .col-1-2 {
+        width: 100%;
+    }
+
+    .col-1-4 {
+        width: 100%;
+    }
+
+    .col-1-8 {
+        width: 100%;
+    }
+
+    .col-1-12 {
+        display: none;
+    }
+
+    .col-5-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body:after {
+        content: "480 to 768px";
+        background-color: hsla(180, 60%, 40%, 0.7);
+    }
+
+    h1, h1 span {
+        font-size: 2.625em;
+    }
+
+    h1 span {
+        display: inline;
+        font-size: inherit;
+    }
+
+    .top-content {
+        text-align: center;
+    }
+
+    .top-text {
+        font-size: 1.1em;
+    }
+
+    .marked-place {
+        margin-right: 0;
+        height: 180px;
+    }
+
+    .greenbox {
+        margin: 10px 0 0
+    }
+
+    .form-container {
+        float: none;
+        margin: 0;
+    }
+
+    .offer1 {
+        background: url("../img/offer1.gif") no-repeat center 0;
+    }
+
+    .offer1 h3 {
+        text-align: center;
+    }
+
+    .offer2 {
+        background: url("../img/offer2.gif") no-repeat center 0;
+    }
+
+    .offer3 {
+        background: url("../img/offer3.gif") no-repeat 100px -1px;
+    }
+
+    .offer3 {
+        padding-left: 24px !important;
+    }
+
+    .footer-text {
+        padding-left: 50px
+    }
+
+    .grid {
+        width: 100%;
+    }
+
+    .col-2-3 {
+        width: 100%;
+    }
+
+    .col-1-2 {
+        width: 100%;
+    }
+
+    .col-1-4 {
+        width: 100%;
+    }
+
+    .col-1-8 {
+        width: 100%;
+    }
+
+    .col-1-12 {
+        width: 0;
+    }
+
+    .col-5-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body:after {
+        content: "768 to 1024px";
+        background-color: hsla(270, 60%, 40%, 0.7);
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .greenbox {
+        font-size: 1.2em
+    }
+
+    .form-container input[type="submit"] {
+        font-size: 1.2em
+    }
+
+    .top-text {
+        font-size: 1.25em
+    }
+
+    .top-text span {
+        font-size: 1.2em;
+    }
+
+    .offer1 {
+        background: url("../img/offer1.gif") no-repeat center 0;
+    }
+
+    .offer1 h3 {
+        text-align: center;
+    }
+
+    .offer2 {
+        background: url("../img/offer2.gif") no-repeat center 0;
+    }
+
+    .offer3 {
+        background: url("../img/offer3.gif") no-repeat 100px -1px;
+    }
+
+    .offer3 {
+        padding-left: 24px !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body:after {
+        content: "1024 and up";
+        background-color: hsla(360, 60%, 40%, 0.7);
+    }
+
+}
