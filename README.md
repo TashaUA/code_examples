@@ -1,2 +1,2 @@
 # code_examples
-My code examples
+HTML/CSS/JS code examples
